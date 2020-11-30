@@ -1,5 +1,67 @@
-/*COLORS:
-Header background - #FFDBAA
-button - #805215
-Header Text - #553100
-Main background - #D4A76A*/
+.main{
+    --headerBackgroundColor: #FFDBAA;
+    --buttonColor: #805215;
+    --headerTextColor: #553100;
+    --mainBackground: #D4A76A;
+    background-color: var(--mainBackground);
+}
+
+.header{
+    color: var(--headerTextColor);
+    background-color: var(--headerBackgroundColor);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.button{
+    background-color: var(--buttonColor);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+}
+.button--header{
+    background-color: var(--buttonColor);
+    color: white;
+    padding: 8px;
+    font-weight: bold;
+    margin: 0 16px 0 16px;
+}
+.button--container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards--container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px black;
+    margin: 16px;
+    padding: 8px;
+    max-width: 20%;
+}
+
+.card--wide{
+    background-color: white;
+    box-shadow: 0px 0px 8px 1px black;
+    margin: 16px;
+    padding: 16px;
+    width: 80%;
+}
